@@ -1,4 +1,5 @@
-import 'package:bright_app/Screen/Splesh/View/SpleshScreen.dart';
+import 'package:bright_app/Screen/Gita/View/GitaScreen.dart';
+import 'package:bright_app/Screen/Show/View/ShowScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -10,7 +11,11 @@ void main() {
         getPages: [
           GetPage(
             name: '/',
-            page: () => SpleshScreen(),
+            page: () => GitaScreen(),
+          ),
+          GetPage(
+            name: '/show',
+            page: () => ShowScreen(),
           ),
         ],
       ),
